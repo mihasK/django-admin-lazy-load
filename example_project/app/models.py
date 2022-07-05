@@ -1,7 +1,7 @@
 from django.db import models
 from random import randrange
+from time import sleep
 from functools import partial
-
 # Create your models here.
 
 class SomeThing(models.Model):
@@ -11,5 +11,6 @@ class SomeThing(models.Model):
     is_ok = models.BooleanField(default=True)
     
     @property
-    def exponent(self):
-        return (2**self.number) % 10**10
+    def model_calculated_field(self):
+        sleep(5)  # heavy query or calculation happens
+        return 'Number is %s' % self.number

@@ -1,0 +1,21 @@
+<div id="{{id}}" 
+    url_to_load="{{ url_to_load }}"
+    lazyload_placeholder="yes" 
+    loading_type="{{ loading_type }}"
+    >
+
+    
+    <div 
+        {% if loading_type != "on_click" %} style="display: none;" {% endif %}
+        id="{{id}}-click">
+        <i class="fa fa-refresh" title="Click to load"> </i>
+    </div>
+
+    <div 
+        style="display: none;"
+        id="{{id}}-spinner" class="fa fa-spinner fa-spin" title="Loading...">
+    </div>  
+    
+    <div id="{{id}}-content"></div>
+    
+</div> 
