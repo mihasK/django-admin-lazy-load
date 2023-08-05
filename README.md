@@ -8,7 +8,7 @@ Supports any kind of admin fields including:
 * properties defined on model level
 * properties defined in admin class
 
-  Please see [example project](example_project/app/admin.py).
+Please look into [example admin.py](example_project/app/admin.py) for different cases.
 
 ![demo](docs/example_lazy_load.gif)
 
