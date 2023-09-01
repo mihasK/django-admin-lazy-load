@@ -1,5 +1,8 @@
 # django-admin-lazy-load 
 
+[![PyPI - Version](https://img.shields.io/pypi/v/django-admin-lazy-load?label=django-admin-lazy-load&link=https%3A%2F%2Fpypi.org%2Fproject%2Fdjango-admin-lazy-load)](https://pypi.org/project/django-admin-lazy-load/)
+
+
 Allows to speed-up loading of django admin page by deffering (lazy  loading) heavy calculated field  - via separate ajax requests.
 
 Super-easy yet flexible set-up. 
